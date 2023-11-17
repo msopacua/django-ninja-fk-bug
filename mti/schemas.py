@@ -4,12 +4,12 @@ from .models import ReportCard, LinesOfCode
 
 
 class ReportCardSchema(ModelSchema):
-    class Config:
+    class Meta:
         model = ReportCard
-        model_fields = '__all__'
+        fields = '__all__'
 
 
 class LinesOfCodeSchema(ModelSchema):
-    class Config:
+    class Meta:
         model = LinesOfCode
-        model_fields = '__all__'
+        fields = '__all__'
